@@ -26,3 +26,5 @@ class Order(models.Model):
     address = models.CharField(max_length=255) 
     total = models.DecimalField(max_digits=10, decimal_places=2)
     items = models.ManyToManyField(OrderItem)
+
+
